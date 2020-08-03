@@ -1,8 +1,8 @@
 import React from 'react'
-import { Row, Col, Button, Card, Divider, Space } from 'antd'
+import { Row, Col, Button, Card, Space } from 'antd'
 import '../assets/styles/HomePage.scss'
 import { Typography } from 'antd';
-import { UserOutlined, RightOutlined } from '@ant-design/icons';
+import { RightOutlined } from '@ant-design/icons';
 import Text from 'antd/lib/typography/Text';
 import peopleImg from '../assets/images/people.png'
 import security from '../assets/images/security.png'
@@ -58,7 +58,7 @@ const HomePage = () => {
                     </Card>
                 </Col>
             </Row>
-            <Row align='center' style={{marginTop:'60px'}} >
+            <Row align='center' style={{marginTop:'100px'}} >
                 <Col>
                     <Title level={2} style={{textAlign:'center'}}>Product and Services</Title>
                     <p style={{margin:'20px 0'}}>Apapun kebutuhan legal Anda, biar HAKITA yang urus.</p>
@@ -88,6 +88,16 @@ const HomePage = () => {
                         </Space>
                         <Button block type='primary'>Learn More<RightOutlined/> </Button>
                     </Card>
+                </Col>
+            </Row>
+            <Row align='center' className='accident'>
+                <Col span={24}>
+                    <Row style={{marginTop:'100px'}}>
+                        <Col xs={{span:20, offset:2}} lg={{span:8, offset:2}} className='hero__title'>
+                            <Title>"Tahukah Anda?</Title>
+                            <p>bahwa ketika terlibat kecelakaan Anda tidak perlu memberi SIM atau KTP kepada orang yang ditabrak?"</p>
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
         </div>

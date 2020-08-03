@@ -22,7 +22,7 @@
         }
     }
     .services{
-        margin: 25px 0;
+        margin: 20px 0 60px 0;
         text-align: center;
         p{
             text-align: left;
@@ -35,6 +35,18 @@
         }
         button{
             margin-top: 15px;
+        }
+    }
+    .accident{
+        background: url(../images/accident.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        h1, p{
+            color: white;
+        }
+        h1{
+            margin-bottom: 5px;
         }
     }
 }
