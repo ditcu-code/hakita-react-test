@@ -1,0 +1,11 @@
+.navbar{
+    text-align: center;
+    margin: 1em auto;
+    &__wrap{
+        display: flex;
+        vertical-align: middle;
+        img{
+            width: 45%;
+        }
+    }
+}

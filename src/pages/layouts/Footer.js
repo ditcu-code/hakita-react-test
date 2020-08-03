@@ -1,9 +1,10 @@
 import React from 'react'
+import { Button } from 'antd'
 
 const Footer = () => {
     return (
         <div>
-            Ini Footer cuk, semangaat
+            <Button type='primary'> Hello </Button>
         </div>
     )
 }
