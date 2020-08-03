@@ -1,14 +1,15 @@
 import React from 'react'
-import { Row, Col, Button, Card, Space } from 'antd'
+import { Row, Col, Button, Card, Space, Divider, Input } from 'antd'
 import '../assets/styles/HomePage.scss'
 import { Typography } from 'antd';
-import { RightOutlined } from '@ant-design/icons';
+import { RightOutlined, PhoneOutlined, FacebookOutlined } from '@ant-design/icons';
 import Text from 'antd/lib/typography/Text';
 import peopleImg from '../assets/images/people.png'
 import security from '../assets/images/security.png'
 import lawyer from '../assets/images/lawyer.png'
 import documents from '../assets/images/documents.png'
 import docmgr from '../assets/images/docmgr.png'
+const { TextArea } = Input;
 const { Title } = Typography;
 
 const HomePage = () => {
@@ -144,9 +145,41 @@ const HomePage = () => {
                     </Card>
                 </Col>
             </Row>
-            <Row align='center' style={{margin:'75px 0 45px 0'}} >
+            <Row align='center' style={{marginTop:'60px'}} >
                 <Col>
-                    <Title level={3} style={{textAlign:'center'}}>Reach Us</Title>
+                    <Title level={2} style={{textAlign:'center'}}>Contact Us</Title>
+                    <p style={{margin:'20px 0'}}>Anda punya pertanyaan atau catatan? Kirim saja pesan kepada kami!</p>
+                </Col>
+            </Row>
+            <Row className='contact'>
+                <Col lg={{span:5, offset:3}} className='contact__container'>
+                    <Row className='contact__row'>
+                        <Col className='contact__inner'>
+                            <Title level={4}>Kenali lebih dekat</Title>
+                            <Divider/>
+                            <Space direction='vertical'>
+                                <p> <FacebookOutlined/> Hakita</p>
+                                <p> <PhoneOutlined/> +62 623 923 2394</p>
+                                <p>Jl. Boulevard Barat Raya No. 27, Kelapa Gading Barat, Jakarta Utara</p>
+                            </Space>
+                        </Col>
+                    </Row>
+                </Col>
+                <Col lg={{span:12, offset:0}} className='contact__containerleft'>
+                    <Row className='contact__row'>
+                        <Col className='contact__right'>
+                            <Space direction='vertical'>
+                                <Input placeholder='Nama'></Input>
+                                <Input placeholder='Email'></Input>
+                                <Space direction='horizontal'>
+                                    <Input placeholder='Perusahaan'></Input>
+                                    <Input placeholder='Jabatan'></Input>
+                                </Space>
+                                <TextArea placeholder='Pesan'></TextArea>
+                                <Button type='primary'>Kirim</Button>
+                            </Space>
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
         </div>

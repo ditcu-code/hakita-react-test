@@ -22,7 +22,7 @@
         }
     }
     .services{
-        margin: 20px 0 80px 0;
+        padding: 20px 0 80px 0;
         text-align: center;
         p{
             text-align: left;
@@ -50,8 +50,11 @@
         }
     }
     .blogs{
-        margin: 25px 0;
-        height: auto;
+        padding: 25px 0;
+        height: 375px;
+        .ant-card{
+            background: none;
+        }
         .ant-card-body{
             padding: 12px 0;
             background-color: whitesmoke;
@@ -67,6 +70,39 @@
             }
             p{
                 font-size: 12px;
+            }
+        }
+    }
+    .contact{
+        padding: 20px 0 60px 0;
+        height: 420px;
+        background-color: whitesmoke;
+        &__container{
+            border-radius: 10px 0px 0px 10px;
+            background-color: blue;
+            color: white;
+        }
+        &__containerleft{
+            border-radius: 0px 10px 10px 0px;
+            background-color: white;
+        }
+        &__inner{
+            h4{
+                color: white;
+            }
+            p{
+                font-size: 13px;
+            }
+            background-color: blue;
+            margin: 70px 40px;
+        }
+        &__row{
+            height: 300px;
+        }
+        &__right{
+            margin: 70px 70px;
+            button{
+                float: right;
             }
         }
     }
