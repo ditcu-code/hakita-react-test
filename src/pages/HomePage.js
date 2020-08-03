@@ -2,11 +2,13 @@ import React from 'react'
 import { Row, Col, Button, Card, Divider, Space } from 'antd'
 import '../assets/styles/HomePage.scss'
 import { Typography } from 'antd';
-// import { UserOutlined } from '@ant-design/icons';
+import { UserOutlined, RightOutlined } from '@ant-design/icons';
 import Text from 'antd/lib/typography/Text';
-import people from '../assets/images/people.png'
+import peopleImg from '../assets/images/people.png'
 import security from '../assets/images/security.png'
 import lawyer from '../assets/images/lawyer.png'
+import documents from '../assets/images/documents.png'
+import docmgr from '../assets/images/docmgr.png'
 const { Title } = Typography;
 
 const HomePage = () => {
@@ -29,7 +31,7 @@ const HomePage = () => {
             </Row>
             <Row className='whyus'>
                 <Col lg={{span:6, offset:2}}>
-                    <Card cover={<img alt="example" src={people} />}
+                    <Card cover={<img alt="example" src={peopleImg} />}
                     bordered={false} style={{width:325, height:275, borderRadius:'10px', paddingTop:'10px'}}>
                         <Space direction='vertical'>
                             <Text strong>We Meet People's Needs</Text>
@@ -62,19 +64,29 @@ const HomePage = () => {
                     <p style={{margin:'20px 0'}}>Apapun kebutuhan legal Anda, biar HAKITA yang urus.</p>
                 </Col>
             </Row>
-            <Row className='whyus'>
+            <Row className='services'>
                 <Col lg={{span:6, offset:2}}>
-                    <Card cover={<img alt="example" src={lawyer} />} style={{width:500, height:275}}
+                    <Card style={{width:500, height:300}}
                     bordered={false} hoverable title='Otomasi Dokumen'>
-                        <Text strong>Otomasi Dokumen</Text>
-                        <p>Buat dokumen sudah tidak perlu ribet lagi. Dokumen yang biasa butuh waktu berminggu-minggu sekarang bisa selesai dalam hitungan menit dengan template dari HAKITA.</p>
+                        <Space>
+                            <Col>
+                                <img alt="example" src={documents} />
+                            </Col>
+                            <p>Buat dokumen sudah tidak perlu ribet lagi. Dokumen yang biasa butuh waktu berminggu-minggu sekarang bisa selesai dalam hitungan menit dengan template dari HAKITA.</p>
+                        </Space>
+                        <Button block type='primary'>Learn More<RightOutlined/> </Button>
                     </Card>
                 </Col>
                 <Col lg={{span:6, offset:5}}>
-                    <Card cover={<img alt="example" src={lawyer} />} style={{width:500, height:275}}
+                    <Card style={{width:500, height:300}}
                     bordered={false} hoverable title='Sistem Manajemen Dokumen'>
-                        <Text strong>Sistem Manajemen Dokumen</Text>
-                        <p>Kerja lebih efisien dengan HAKITA! Tidak hanya memantau ribuan dokumen yang Anda miliki, teknologi kami juga dapat memberi tahu Anda jika ada dokumen yang membutuhkan perhatian khusus lewat fitur reminder kami.</p>
+                        <Space>
+                            <Col>
+                                <img alt="example" src={docmgr} />
+                            </Col>
+                            <p>Tidak hanya memantau ribuan dokumen yang Anda miliki, teknologi kami juga dapat memberi tahu Anda jika ada dokumen yang membutuhkan perhatian khusus lewat fitur reminder.</p>
+                        </Space>
+                        <Button block type='primary'>Learn More<RightOutlined/> </Button>
                     </Card>
                 </Col>
             </Row>
