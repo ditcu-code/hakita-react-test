@@ -1,11 +1,12 @@
 .navbar{
-    text-align: center;
     margin: 1em auto;
     &__wrap{
-        display: flex;
-        vertical-align: middle;
+        display: inline-flexbox;
         img{
-            width: 45%;
+            width: 6em;
         }
+    }
+    &__item{
+        text-align: right;
     }
 }
