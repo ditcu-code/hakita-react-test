@@ -24,7 +24,7 @@ const HomePage = () => {
                     </Row>
                 </Col>
             </Row>
-            <Row align='center' style={{marginTop:'75px'}} >
+            <Row align='center' style={{margin:'75px 0 45px 0'}} >
                 <Col>
                     <Title level={3} style={{textAlign:'center'}}>Your Trusted Partner</Title>
                 </Col>
@@ -32,28 +32,28 @@ const HomePage = () => {
             <Row className='whyus'>
                 <Col lg={{span:6, offset:2}}>
                     <Card cover={<img alt="example" src={peopleImg} />}
-                    bordered={false} style={{width:325, height:275, borderRadius:'10px', paddingTop:'10px'}}>
-                        <Space direction='vertical'>
+                    bordered={false} style={{width:325, height:325, borderRadius:'10px', paddingTop:'25px'}}>
+                        <Space direction='vertical' style={{width:'250px'}}>
                             <Text strong>We Meet People's Needs</Text>
-                            <p style={{fontSize:'12px'}}>Kami sadar bahwa hukum masih dianggap sebagai sesuatu yang menakutkan dan belum terjangkau untuk semua golongan. Inilah mengapa kami ada; untuk  menjawab segala kebutuhan legal Anda.</p>
+                            <p style={{fontSize:'12px', paddingTop:'10px'}}>Kami sadar bahwa hukum masih dianggap sebagai sesuatu yang menakutkan dan belum terjangkau untuk semua golongan. Inilah mengapa kami ada; untuk  menjawab segala kebutuhan legal Anda.</p>
                         </Space>
                     </Card>
                 </Col>
                 <Col lg={{span:6, offset:1}}>
                     <Card cover={<img alt="example" src={security} />}
-                    bordered={false} style={{width:325, height:275, borderRadius:'10px', paddingTop:'10px'}}>
-                        <Space direction='vertical'>
+                    bordered={false} style={{width:325, height:325, borderRadius:'10px', paddingTop:'25px'}}>
+                        <Space direction='vertical' style={{width:'250px'}}>
                             <Text strong>We Provide Protection</Text>
-                            <p style={{fontSize:'12px'}}>Dibantu oleh praktisi hukum dengan pengalaman lebih dari 10 tahun, HAKITA memastikan bahwa Anda mendapatkan perlindungan hukum yang sesuai dengan hak Anda sebagai warga negara.</p>
+                            <p style={{fontSize:'12px', paddingTop:'10px'}}>Dibantu oleh praktisi hukum dengan pengalaman lebih dari 10 tahun, HAKITA memastikan bahwa Anda mendapatkan perlindungan hukum yang sesuai dengan hak Anda sebagai warga negara.</p>
                         </Space>
                     </Card>
                 </Col>
                 <Col lg={{span:6, offset:1}}>
                     <Card cover={<img alt="example" src={lawyer} />}
-                    bordered={false} style={{width:325, height:275, borderRadius:'10px', paddingTop:'10px'}}>
-                        <Space direction='vertical'>
+                    bordered={false} style={{width:325, height:325, borderRadius:'10px', paddingTop:'25px'}}>
+                        <Space direction='vertical' style={{width:'250px'}}>
                             <Text strong>We Are Trustworthy</Text>
-                            <p style={{fontSize:'12px'}}>HAKITA hadir karena kami percaya bahwa hukum adalah hak semua orang. Misi kami untuk menjadikan hukum sebagai sesuatu yang mudah dimengerti dan dapat diakses oleh semua orang.</p>
+                            <p style={{fontSize:'12px', paddingTop:'10px'}}>HAKITA hadir karena kami percaya bahwa hukum adalah hak semua orang. Misi kami untuk menjadikan hukum sebagai sesuatu yang mudah dimengerti dan dapat diakses oleh semua orang.</p>
                         </Space>
                     </Card>
                 </Col>
@@ -98,6 +98,55 @@ const HomePage = () => {
                             <p>bahwa ketika terlibat kecelakaan Anda tidak perlu memberi SIM atau KTP kepada orang yang ditabrak?"</p>
                         </Col>
                     </Row>
+                </Col>
+            </Row>
+            <Row align='center' style={{marginTop:'60px'}} >
+                <Col>
+                    <Title level={2} style={{textAlign:'center'}}>Love Reading, Keep Reading</Title>
+                    <p style={{margin:'20px 0'}}>Punya pertanyaan soal hukum? Temukan jawabannya di blog HAKITA.</p>
+                </Col>
+            </Row>
+            <Row className='blogs'>
+                <Col lg={{span:5, offset:2}}>
+                    <Card style={{width:260, height:400}} cover={<img alt="example" src={'https://www.hakita.id/blog/wp-content/uploads/2020/06/hakita-konser-740x400.jpg'} />}
+                    bordered={false} >
+                        <Space direction='vertical' className='blogs__text' >
+                            <Title level={4}>Konser Semasa COVID 19, Boleh?</Title>
+                            <p>Acara sosial seperti konser merupakan hal yang banyak ditunggu oleh kalangan muda di berbagai belahan dunia. Setiap tahun, panggung ...</p>
+                        </Space>
+                    </Card>
+                </Col>
+                <Col lg={{span:5, offset:0}}>
+                    <Card style={{width:260, height:400}} cover={<img alt="example" src={'https://www.hakita.id/blog/wp-content/uploads/2020/06/hakita-konser-740x400.jpg'} />}
+                    bordered={false} >
+                        <Space direction='vertical' className='blogs__text' >
+                            <Title level={4}>Konser Semasa COVID 19, Boleh?</Title>
+                            <p>Acara sosial seperti konser merupakan hal yang banyak ditunggu oleh kalangan muda di berbagai belahan dunia. Setiap tahun, panggung ...</p>
+                        </Space>
+                    </Card>
+                </Col>
+                <Col lg={{span:5, offset:0}}>
+                    <Card style={{width:260, height:400}} cover={<img alt="example" src={'https://www.hakita.id/blog/wp-content/uploads/2020/06/hakita-konser-740x400.jpg'} />}
+                    bordered={false} >
+                        <Space direction='vertical' className='blogs__text' >
+                            <Title level={4}>Konser Semasa COVID 19, Boleh?</Title>
+                            <p>Acara sosial seperti konser merupakan hal yang banyak ditunggu oleh kalangan muda di berbagai belahan dunia. Setiap tahun, panggung ...</p>
+                        </Space>
+                    </Card>
+                </Col>
+                <Col lg={{span:5, offset:0}}>
+                    <Card style={{width:260, height:400}} cover={<img alt="example" src={'https://www.hakita.id/blog/wp-content/uploads/2020/06/hakita-konser-740x400.jpg'} />}
+                    bordered={false} >
+                        <Space direction='vertical' className='blogs__text' >
+                            <Title level={4}>Konser Semasa COVID 19, Boleh?</Title>
+                            <p>Acara sosial seperti konser merupakan hal yang banyak ditunggu oleh kalangan muda di berbagai belahan dunia. Setiap tahun, panggung ...</p>
+                        </Space>
+                    </Card>
+                </Col>
+            </Row>
+            <Row align='center' style={{margin:'75px 0 45px 0'}} >
+                <Col>
+                    <Title level={3} style={{textAlign:'center'}}>Reach Us</Title>
                 </Col>
             </Row>
         </div>
