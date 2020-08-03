@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col, Button, Card, Space, Divider, Input } from 'antd'
 import '../assets/styles/HomePage.scss'
 import { Typography } from 'antd';
-import { RightOutlined, PhoneOutlined, FacebookOutlined } from '@ant-design/icons';
+import { RightOutlined, PhoneFilled, FacebookFilled } from '@ant-design/icons';
 import Text from 'antd/lib/typography/Text';
 import peopleImg from '../assets/images/people.png'
 import security from '../assets/images/security.png'
@@ -69,25 +69,25 @@ const HomePage = () => {
                 <Col lg={{span:6, offset:2}}>
                     <Card style={{width:500, height:300}}
                     bordered={false} hoverable title='Otomasi Dokumen'>
-                        <Space>
+                        <Space className='services__content'>
                             <Col>
                                 <img alt="example" src={documents} />
                             </Col>
                             <p>Buat dokumen sudah tidak perlu ribet lagi. Dokumen yang biasa butuh waktu berminggu-minggu sekarang bisa selesai dalam hitungan menit dengan template dari HAKITA.</p>
                         </Space>
-                        <Button block type='primary'>Learn More<RightOutlined/> </Button>
+                        <Button href='https://www.hakita.id/produk' block type='primary'>Learn More<RightOutlined/> </Button>
                     </Card>
                 </Col>
                 <Col lg={{span:6, offset:5}}>
                     <Card style={{width:500, height:300}}
                     bordered={false} hoverable title='Sistem Manajemen Dokumen'>
-                        <Space>
+                        <Space className='services__content'>
                             <Col>
                                 <img alt="example" src={docmgr} />
                             </Col>
                             <p>Tidak hanya memantau ribuan dokumen yang Anda miliki, teknologi kami juga dapat memberi tahu Anda jika ada dokumen yang membutuhkan perhatian khusus lewat fitur reminder.</p>
                         </Space>
-                        <Button block type='primary'>Learn More<RightOutlined/> </Button>
+                        <Button href='https://www.hakita.id/produk' block type='primary'>Learn More<RightOutlined/> </Button>
                     </Card>
                 </Col>
             </Row>
@@ -158,8 +158,8 @@ const HomePage = () => {
                             <Title level={4}>Kenali lebih dekat</Title>
                             <Divider/>
                             <Space direction='vertical'>
-                                <p> <FacebookOutlined/> Hakita</p>
-                                <p> <PhoneOutlined/> +62 623 923 2394</p>
+                                <p> <FacebookFilled/> Hakita</p>
+                                <p> <PhoneFilled/> +62 623 923 2394</p>
                                 <p>Jl. Boulevard Barat Raya No. 27, Kelapa Gading Barat, Jakarta Utara</p>
                             </Space>
                         </Col>
