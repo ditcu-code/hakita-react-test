@@ -1,14 +1,20 @@
-.navbar{
+.navbarblog{
     position: fixed;
     top: 0;
     width: 100%;
-    background: white;
+    background: #1b4580;
     z-index: 1;
     &__wrap{
         margin: 1em auto;
         display: inline-flexbox;
         img{
             width: 6em;
+        }
+        button{
+            color: white;
+        }
+        button:hover{
+            color: rgb(177, 225, 255);
         }
     }
     &__item{
