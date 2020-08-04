@@ -9,6 +9,7 @@ import lawyer from '../assets/images/lawyer.png'
 import documents from '../assets/images/documents.png'
 import docmgr from '../assets/images/docmgr.png'
 import Header from './layouts/Header';
+import { BlogCard } from './components/BlogCard';
 const { TextArea } = Input;
 const { Title } = Typography;
 
@@ -109,44 +110,7 @@ const HomePage = () => {
                         <p style={{margin:'20px 0'}}>Punya pertanyaan soal hukum? Temukan jawabannya di blog HAKITA.</p>
                     </Col>
                 </Row>
-                <Row className='blogs'>
-                    <Col lg={{span:5, offset:2}}>
-                        <Card style={{width:260, height:400}} cover={<img alt="example" src={'https://www.hakita.id/blog/wp-content/uploads/2020/06/hakita-konser-740x400.jpg'} />}
-                        bordered={false} >
-                            <Space direction='vertical' className='blogs__text' >
-                                <Title level={4}>Konser Semasa COVID 19, Boleh?</Title>
-                                <p>Acara sosial seperti konser merupakan hal yang banyak ditunggu oleh kalangan muda di berbagai belahan dunia. Setiap tahun, panggung ...</p>
-                            </Space>
-                        </Card>
-                    </Col>
-                    <Col lg={{span:5, offset:0}}>
-                        <Card style={{width:260, height:400}} cover={<img alt="example" src={'https://www.hakita.id/blog/wp-content/uploads/2020/06/hakita-konser-740x400.jpg'} />}
-                        bordered={false} >
-                            <Space direction='vertical' className='blogs__text' >
-                                <Title level={4}>Konser Semasa COVID 19, Boleh?</Title>
-                                <p>Acara sosial seperti konser merupakan hal yang banyak ditunggu oleh kalangan muda di berbagai belahan dunia. Setiap tahun, panggung ...</p>
-                            </Space>
-                        </Card>
-                    </Col>
-                    <Col lg={{span:5, offset:0}}>
-                        <Card style={{width:260, height:400}} cover={<img alt="example" src={'https://www.hakita.id/blog/wp-content/uploads/2020/06/hakita-konser-740x400.jpg'} />}
-                        bordered={false} >
-                            <Space direction='vertical' className='blogs__text' >
-                                <Title level={4}>Konser Semasa COVID 19, Boleh?</Title>
-                                <p>Acara sosial seperti konser merupakan hal yang banyak ditunggu oleh kalangan muda di berbagai belahan dunia. Setiap tahun, panggung ...</p>
-                            </Space>
-                        </Card>
-                    </Col>
-                    <Col lg={{span:5, offset:0}}>
-                        <Card style={{width:260, height:400}} cover={<img alt="example" src={'https://www.hakita.id/blog/wp-content/uploads/2020/06/hakita-konser-740x400.jpg'} />}
-                        bordered={false} >
-                            <Space direction='vertical' className='blogs__text' >
-                                <Title level={4}>Konser Semasa COVID 19, Boleh?</Title>
-                                <p>Acara sosial seperti konser merupakan hal yang banyak ditunggu oleh kalangan muda di berbagai belahan dunia. Setiap tahun, panggung ...</p>
-                            </Space>
-                        </Card>
-                    </Col>
-                </Row>
+                <BlogCard/>
                 <Row align='center' style={{marginTop:'60px'}} >
                     <Col>
                         <Title level={2} style={{textAlign:'center'}}>Contact Us</Title>
@@ -162,7 +126,7 @@ const HomePage = () => {
                                 <Space direction='vertical'>
                                     <p> <FacebookFilled/> Hakita</p>
                                     <p> <PhoneFilled/> +62 623 923 2394</p>
-                                    <p>Jl. Boulevard Barat Raya No. 27, Kelapa Gading Barat, Jakarta Utara</p>
+                                    <p>Jl. Boulevard Barat Raya No. 27, Kelapa Gading Barat <br/> Jakarta Utara</p>
                                 </Space>
                             </Col>
                         </Row>

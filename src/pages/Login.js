@@ -56,7 +56,6 @@ export const Login = () => {
                             Lupa Password?
                             </a>
                         </Form.Item>
-
                         <Form.Item>
                             <Button block type="primary" htmlType="submit" className="login-form-button">
                             Log in
