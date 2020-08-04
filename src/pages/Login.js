@@ -20,6 +20,7 @@ export const Login = () => {
                     }}
                     onFinish={onFinish}
                     >
+                        <h3>Masuk</h3>
                         <Form.Item
                             name="username"
                             rules={[
@@ -60,8 +61,9 @@ export const Login = () => {
                             <Button block type="primary" htmlType="submit" className="login-form-button">
                             Log in
                             </Button>
-                            <br/>
-                            Belum memiliki akun? <a href="/">Daftar Sekarang!</a>
+                            <p>
+                                Belum memiliki akun? <a href="/register">Daftar Sekarang!</a>
+                            </p>
                         </Form.Item>
                     </Form>
                 </Col>

@@ -18,11 +18,11 @@ const Header = () => {
                     <Button type='text'>ABOUT</Button>
                     <Button type='text'>SERVICES</Button>
                     <Button type='text'>PRICING</Button>
-                    <Button type='text'>BLOG</Button>
+                    <Button href='/blog' type='text'>BLOG</Button>
                     <Button type='text'>CONTACT</Button>
                 </Col>
                 <Col sm={0} md={{span:1}}>
-                    <Button type='primary' icon={<UserOutlined/>}>LOGIN</Button> 
+                    <Button href='/login' type='primary' icon={<UserOutlined/>}>LOGIN</Button> 
                 </Col>
             </Row>
         </div>
